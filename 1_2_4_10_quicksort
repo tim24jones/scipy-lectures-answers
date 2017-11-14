@@ -1,0 +1,36 @@
+#fibonacci: see answers for interactive python
+#quicksort:
+
+def quicksort(alist):
+    if len(alist)<2:
+        return alist
+    else:
+        helperfunct(0,len(alist)-1,alist)
+
+def halfsortfunct(first,last,alist):
+    if first>last:
+        return Error with list order
+    else:
+        newpiv=pivot(first,last,alist)
+        halfsortfunct(first,newpiv-1,alist)
+        halfsortfunct(newpiv+1,last,alist)
+
+def pivot(first,last,alist):
+    sec_value=alist[first]
+    first_in_swp=first+1
+    last_in_swp=last
+    i=False
+    while i == False:
+        if first_in_swp<=last_in_swp and sec_value>=alist[last_in_swp]:
+            first_in_swp+=first_in_swp
+            
+        if first_in_sqp<=last_in_swp and sec_value<=alist[first_in_swp]:
+            last_in_swp-=last_in_swp
+            
+        if first_in_swp>last_in_swp:
+            i=True
+            
+        else:
+            alist[first_in_swp],alist[last_in_swp]=alist[last_in_swp],alist[first_in_swp]
+    alist[first],alist[last_in_swp]=alist[last_in_swp],alist[first]
+    return last_in_swp
