@@ -1,0 +1,11 @@
+#scipy-lectures solutions using python console
+>> z=1+1j
+>> while abs(z)<100:
+       z=z**2+1
+>>z
+#1.2.3.6 (Wallis formula):
+>>halfpie=4/3
+>>for i in range(2,100):
+      halfpie=4*i**2/(4*i**2-1)*halfpie
+
+>>2*halfpie
