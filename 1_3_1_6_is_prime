@@ -17,3 +17,5 @@ for j in range(2,N_max+1):
     if is_prime[j]==True:
         is_prime[j**2::j]=False
     else:
+        continue
+print(np.nonzero(is_prime))
