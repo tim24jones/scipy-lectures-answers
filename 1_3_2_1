@@ -1,0 +1,23 @@
+#ran in console:
+import numpy as np
+a=np.arange(10000)
+%timeit a+1
+#returned: 8.18 µs ± 17.2 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+l=range(10000)
+%timeit[i+1 for i in l]
+#returned: 840 µs ± 5.14 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+f=np.arange(1,50,2)
+g=np.arage(2,51,2)
+%timeit f+g
+#returned: 794 ns ± 1.92 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
+h=list(range(1,50,2)
+k=list(range(2,51,2)
+def addls(l,m):
+    for i in range(len(l)): #didn't use enumerate because others said it increased time
+        l[i]+m[i]
+%timeit [addls(h,k)]
+#returned: 3.03 µs ± 26.8 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+p=np.arange(0,5)
+2**p
+p=2**(3*p)-p
+p
