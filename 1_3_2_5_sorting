@@ -1,0 +1,21 @@
+#Reductions
+#Other function expected:
+#difference (implemented like cumsum in np.diff(), or by neighbor in np.ediff1d
+#cumsum returns the cumulative sum, rather than the grand total
+
+#Shape manipulations:
+#flatten vs ravel:
+#flatten returns a copy, ravel only copies the array if needed
+
+#Sorting data:
+import numpy as np
+a=np.array([[4,3,5],[1,2,1]])
+b=np.sort(a,axis=1)
+a.sort(axis=1)
+np.array_equal(a,b)
+d=np.arange(10)
+np.random.shuffle(d)
+np.reshape(d,(2,5))
+np.reshape(np.sort(np.ravel(d)),(2,5))
+np.random.shuffle(d)
+np.reshape(np.sort(d, axis=None),(2,5))
