@@ -1,0 +1,10 @@
+#in console:
+#1
+np.transpose(np.reshape(np.arange(1,16),(3,-1)))
+#2
+c=np.arange(25).reshape(5,5)
+d=np.array([1.,5,10,15,20])[:,np.newaxis]
+c/d
+#3 (unconfirmed)
+idx=np.argsort(abs(f-np.full((10,3),5)),axis=1)[:,0]
+g[arange(1,11),np.transpose(idx)]
